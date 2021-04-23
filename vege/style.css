@@ -39,24 +39,17 @@ body {
     font-size: 0.8rem;
     font-weight: 400;
  }
-.jidlo 
 
  .komentar { 
-     text-align: right;    
+     position:absolute;
+     top: 0;
+     right: 0.5rem;
  }
  
-.hlavni_recept .jidlo,
-.maly_recept .jidlo {
+.jidlo {
      position:absolute;
      top: 0;
  }
-
-.hlavni_recept .komentar,
-.maly_recept .komentar {
-    position:absolute;
-    top: 0;
-    right: 0.5rem;
-}
 
 h2 {
     font-family: 'Raleway', sans-serif;
@@ -109,4 +102,35 @@ h3 {
 
 .ctvrty_recept {
     background-image: url(images/burger.jpg);
+}
+
+@media screen and (min-width: 480px) {
+    .obrazovka {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    .hlavni_recept {
+        min-height: 250px;
+        width: 100%;
+    }
+    .maly_recept {
+        min-height: 150px;
+        width: calc(50% - 0.25rem);
+    }
+    .style {
+        padding: 1.25rem;
+    }
+    .druhy_recept {
+        order: 1;
+    }
+    .ctvrty_recept {
+        order: 2;
+    }
 }
