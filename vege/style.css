@@ -18,7 +18,6 @@ s pribyvajici sirkou pridavame media query pro středně široké obrazovky:
 body {
     margin: 0;
     font-family: 'Source Sans Pro', sans-serif;
-    color: black;
 }
 
 .paticka {
@@ -39,6 +38,24 @@ body {
 .komentar {
     font-size: 0.8rem;
     font-weight: 400;
+ }
+.jidlo 
+
+ .komentar { 
+     text-align: right;    
+ }
+ 
+.hlavni_recept .jidlo,
+.maly_recept .jidlo {
+     position:absolute;
+     top: 0;
+ }
+
+.hlavni_recept .komentar,
+.maly_recept .komentar {
+    position:absolute;
+    top: 0;
+    right: 0.5rem;
 }
 
 h2 {
@@ -51,24 +68,45 @@ h3 {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
     font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 .obrazovka {
-    display: flex;
-    flex-direction: column;
+    color: #fff;
     margin: auto;
 }
 
-.hlavni_recept img {
-    flex: 1;
-    /*width: 100%;*/
-    padding: 0.5rem;  
+.style {
+    background-position: center;
+    background-size: cover;
+    padding: 0.5rem;
+    margin: 0.1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+.hlavni_recept {
+    background-image: url(images/salat.jpg); 
     min-height: 200px; 
 }
 
-.maly_recept img {
-    flex:1;
-    /*width: 100%;*/
-    min-height: 90px;
-    padding: 0.5rem;
+.maly_recept {
+    min-height: 90px; 
+}
+
+.prvni_recept {
+    background-image: url(images/chlebicek.jpg);    
+}
+
+.druhy_recept {
+    background-image: url(images/cizrna.jpg);
+}
+
+.treti_recept {
+    background-image: url(images/tacos.jpg);
+}
+
+.ctvrty_recept {
+    background-image: url(images/burger.jpg);
 }
