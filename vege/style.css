@@ -107,9 +107,8 @@ h3 {
 @media screen and (min-width: 480px) {
     .obrazovka {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
     }
-
     h2 {
         font-size: 2rem;
     }
@@ -124,13 +123,47 @@ h3 {
         min-height: 150px;
         width: calc(50% - 0.25rem);
     }
+    .male_recepty {
+        display: flex;
+        flex-flow: row wrap;
+    }
     .style {
         padding: 1.25rem;
     }
+    
     .druhy_recept {
         order: 1;
     }
     .ctvrty_recept {
         order: 2;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .obrazovka {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    .hlavni_recept {
+        min-height: 400px;
+        flex: 1;
+        
+    }
+    .maly_recept {
+        min-height: 200px;
+    }
+    .style {
+        padding: 1.25rem;
+    }
+    .male_recepty {
+        display: flex;
+        flex-flow: row wrap;
+        flex: 2;
     }
 }
