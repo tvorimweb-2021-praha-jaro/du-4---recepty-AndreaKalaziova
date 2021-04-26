@@ -38,18 +38,13 @@ body {
 .komentar {
     font-size: 0.8rem;
     font-weight: 400;
+    position:absolute;
+    top: 0; 
  }
 
  .komentar { 
-     position:absolute;
-     top: 0;
      right: 0.5rem;
- }
- 
-.jidlo {
-     position:absolute;
-     top: 0;
- }
+}
 
 h2 {
     font-family: 'Raleway', sans-serif;
@@ -67,6 +62,7 @@ h3 {
 .obrazovka {
     color: #fff;
     margin: auto;
+    text-shadow: 0.5rem 0.5rem 0.5rem rgba(109, 102, 102, 0.819);
 }
 
 .style {
